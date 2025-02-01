@@ -1,0 +1,32 @@
+id,Table,Row,Description,Description_PTBR,Special
+1,application_data,SK_ID_CURR,ID of loan in our sample,ID do empr�stimo em nossa amostra,
+2,application_data,TARGET,"Target variable (1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample, 0 - all other cases)","Vari�vel alvo (1 - cliente com dificuldades de pagamento: ele/ela teve atraso no pagamento por mais de X dias em pelo menos uma das primeiras Y parcelas do empr�stimo em nossa amostra, 0 - todos os outros casos)",
+5,application_data,NAME_CONTRACT_TYPE,Identification if loan is cash or revolving,Identifica��o se o empr�stimo � � vista ou rotativo,
+6,application_data,CODE_GENDER,Gender of the client,G�nero do cliente,
+7,application_data,FLAG_OWN_CAR,Flag if the client owns a car,Indicador se o cliente possui um carro,
+9,application_data,CNT_CHILDREN,Number of children the client has,N�mero de filhos que o cliente tem,
+10,application_data,AMT_INCOME_TOTAL,Income of the client,Renda do cliente,
+11,application_data,AMT_CREDIT,Credit amount of the loan,Valor do cr�dito do empr�stimo,
+12,application_data,AMT_ANNUITY,Loan annuity,Anuidade do empr�stimo,
+15,application_data,NAME_INCOME_TYPE,"Clients income type (businessman, working, maternity leave,�)","Tipo de renda do cliente (empres�rio, trabalhador, licen�a maternidade, ...)",
+18,application_data,NAME_HOUSING_TYPE,"What is the housing situation of the client (renting, living with parents, ...)","Qual � a situa��o habitacional do cliente (alugando, morando com os pais, ...)",
+20,application_data,DAYS_BIRTH,Client's age in days at the time of application,Idade do cliente em dias no momento da solicita��o,time only relative to the application
+22,application_data,DAYS_REGISTRATION,How many days before the application did client change his registration,Quantos dias antes da solicita��o o cliente mudou seu registro,time only relative to the application
+23,application_data,DAYS_ID_PUBLISH,How many days before the application did client change the identity document with which he applied for the loan,Quantos dias antes da solicita��o o cliente mudou o documento de identidade com o qual solicitou o empr�stimo,time only relative to the application
+31,application_data,OCCUPATION_TYPE,What kind of occupation does the client have,Qual � a ocupa��o do cliente,
+32,application_data,CNT_FAM_MEMBERS,How many family members does client have,Quantos membros da fam�lia o cliente tem,
+44,application_data,EXT_SOURCE_1,Normalized score from external data source,Pontua��o normalizada de uma fonte de dados externa,normalized
+46,application_data,EXT_SOURCE_3,Normalized score from external data source,Pontua��o normalizada de uma fonte de dados externa,normalized
+98,application_data,DAYS_LAST_PHONE_CHANGE,How many days before application did client change phone,Quantos dias antes da solicita��o o cliente mudou de telefone,
+176,previous_application.csv,SK_ID_PREV,"ID of previous credit in Home credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loan applications in Home Credit, previous application could, but not necessarily have to lead to credit) ","ID do cr�dito anterior no Home Credit relacionado ao empr�stimo em nossa amostra. (Um empr�stimo em nossa amostra pode ter 0, 1, 2 ou mais solicita��es de empr�stimo anteriores no Home Credit, a solicita��o anterior pode, mas n�o necessariamente precisa, levar ao cr�dito",hashed
+177,previous_application.csv,SK_ID_CURR,ID of loan in our sample,ID do empr�stimo em nossa amostra,hashed
+178,previous_application.csv,NAME_CONTRACT_TYPE,"Contract product type (Cash loan, consumer loan [POS] ,...) of the previous application","Tipo de produto do contrato (Empr�stimo � vista, empr�stimo ao consumidor [POS], ...) da solicita��o anterior",
+179,previous_application.csv,AMT_ANNUITY,Annuity of previous application,Anuidade da solicita��o anterior,
+180,previous_application.csv,AMT_APPLICATION,For how much credit did client ask on the previous application,Quanto de cr�dito o cliente pediu na solicita��o anterior,
+181,previous_application.csv,AMT_CREDIT,"Final credit amount on the previous application. This differs from AMT_APPLICATION in a way that the AMT_APPLICATION is the amount for which the client initially applied for, but during our approval process he could have received different amount - AMT_CREDIT","Valor final do cr�dito na solicita��o anterior. Isso difere de AMT_APPLICATION de uma forma que o AMT_APPLICATION � o valor pelo qual o cliente inicialmente solicitou, mas durante nosso processo de aprova��o ele poderia ter recebido um valor diferente - AMT_CREDIT",
+196,previous_application.csv,CODE_REJECT_REASON,Why was the previous application rejected,Por que a solicita��o anterior foi rejeitada,
+208,previous_application.csv,DAYS_FIRST_DRAWING,Relative to application date of current application when was the first disbursement of the previous application,"Em rela��o � data da solicita��o da solicita��o atual, quando foi o primeiro desembolso da solicita��o anterior",time only relative to the application
+209,previous_application.csv,DAYS_FIRST_DUE,Relative to application date of current application when was the first due supposed to be of the previous application,"Em rela��o � data da solicita��o da solicita��o atual, quando deveria ser o primeiro vencimento da solicita��o anterior",time only relative to the application
+210,previous_application.csv,DAYS_LAST_DUE_1ST_VERSION,Relative to application date of current application when was the first due of the previous application,"Em rela��o � data da solicita��o da solicita��o atual, quando foi o primeiro vencimento da solicita��o anterior",time only relative to the application
+211,previous_application.csv,DAYS_LAST_DUE,Relative to application date of current application when was the last due date of the previous application,"Em rela��o � data da solicita��o da solicita��o atual, quando foi a �ltima data de vencimento da solicita��o anterior",time only relative to the application
+212,previous_application.csv,DAYS_TERMINATION,Relative to application date of current application when was the expected termination of the previous application,"Em rela��o � data da solicita��o da solicita��o atual, quando foi a rescis�o esperada da solicita��o anterior",time only relative to the application
